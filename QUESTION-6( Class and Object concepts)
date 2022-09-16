@@ -1,0 +1,40 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<math.h>
+using namespace std;
+
+
+
+
+class triangle{
+public: 
+  void  print_perimeter(int s1,int s2,int s3){
+        int s;
+        s= s1+s2+s3;
+        cout<<"perimeter is "<<s<<endl;
+    }
+    
+    void print_area(int s1,int s2,int s3){
+        int s= (s1+s2+s3)/2;
+        double area;
+        area= sqrt( s*(s-s1)*(s-s2)*(s-s3) );
+      
+      if ((s1+s2)<s3  || (s1+s3)<s2||(s2+s3)<s1 )
+      {cout<<"invalid triangle"; 
+    }
+    else 
+    {
+        cout<<"area is: "<<area<<endl;
+    }
+    }
+};
+
+int main(){
+ triangle t1;
+t1.print_perimeter(3,4,5);
+t1.print_area(1,10,12);
+    return 0;
+    
+}
+
