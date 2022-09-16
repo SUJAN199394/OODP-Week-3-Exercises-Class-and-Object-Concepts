@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class circle{
+public:
+int raduis;
+float calculate perimeter(){
+return 2*3.14*raduis;
+}
+float calculate area(){
+return 3.14*raduis*raduis;
+}
+};
+int main()
+{
+circle circle 1;
+circle 1.raduis=24;
+cout<<"perimeter of the circle:"<<circle1.calculate perimeter()<<endl;
+cout<<"area of the circle:"<<circle1.calculate area ()<<endl;
+return 0;
+}
